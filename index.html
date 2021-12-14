@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="inputs">
+                <input type="text" id="task" placeholder="Criar tarefa..." autocomplete="off"> 
+                <button>Adicionar</button>
+            </div>
+
+            <hr>
+
+            <div class="task-list">
+
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="aviso">
+                <p>Este é um pequeno projeto de gerenciar tarefas, feito com as tecnologias HTML, CSS e Vanilla JavaScript. Ele irá ser o antecessor do projeto que está sendo desenvolvido, o Task Calendar, que contem sistema de autenticação e integração com o banco de dados do Firebase. Caso queira dar o feedback sobre o projeto ou queira tirar alguma dúvida, entre em contato comigo pelas minhas redes sociais. Obrigado por visitar esta página ;).</p>
+            </div>
+            <div class="footer-box">
+                <h2>Redes sociais</h2>
+                <ul class="sociais">
+                    <li><a target="_blank" href="https://www.instagram.com/pe.lucs"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a target="_blank" href="www.linkedin.com/in/pedro-lucas-083"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a target="_blank" href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="mailto:pedro.lucs0089@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+                <p>Desenvolvido por Pedro Lucas - 13/12/2021</p>
+            </div>
+        </div>
+
+        <div class="edit-task-container">
+            <div class="edit-task">
+                <span onclick="closeModal()"><ion-icon name="close-outline"></ion-icon></span>
+                <h4>Editar tarefa</h4>
+                <p>Id</p>
+                <hr>
+                <input type="text" id="inputEdit" autocomplete="off">
+                <button onclick="saveNewTask()">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #222;
+}
+.box{
+    width: 60%;
+    margin-top: 50px;
+
+    border-radius: 10px;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs input{
+    width: 80%;
+    padding: 15px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+
+    outline: none;
+    transition: .3s;
+}
+.inputs button{
+    width: 20%;
+    padding: 0 10px;
+    margin-left: 10px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    font-size: 11px;
+
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.inputs button:hover{
+    background-color: #555;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+
+    border: 0;
+    background-color: #444;
+}
+.task{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+}
+.task span{
+    font-size: 13px;
+    color: #aaa;
+}
+.task p{
+    word-break: break-word;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    font-size: 15pt;
+}
+.buttons li{
+    padding: 10px;
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    background-color: #555;
+
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(0.9);
+}
+.buttons li:hover{
+    transform: scale(1);
+}
+
+/* FOOTER */
+.footer-container{
+    width: 60%;
+}
+.aviso{
+    width: 100%;
+    padding: 20px;
+
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+}
+.aviso p {
+    width: 100%;
+    font-size: 14px;
+}
+.footer-container hr{
+    display: none;
+}
+
+.footer-box{
+    margin-top: 30px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-box h2{
+    color: #ccc;
+}
+.sociais{
+    display: flex;
+    list-style: none;
+}
+.sociais li{
+    width: 55px;
+    height: 55px;
+    margin:  20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    background-color: #444;
+
+    cursor: pointer;
+    transition: .3s;
+}
+.sociais li:hover{
+    transform: scale(1.1);
+}
+.sociais a{
+    position: relative;
+    top: 5px;
+
+    font-size: 1.7rem;
+    color: #ccc;
+}
+.footer-box p{
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* MODAL EDITAR TASK */
+.edit-task-container{
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.edit-task{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    border-radius: 10px;
+    background-color: #555;
+    color: #fff;
+}
+.edit-task span{
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 20px;
+    
+    border-radius: 20px;
+    background-color: #666;
+    font-size: 15pt;
+
+    cursor: pointer;
+}
+.edit-task input{
+    padding: 10px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: #666;
+    color: #fff;
+
+    outline: none;
+    transition: .3s;
+}
+.edit-task button{
+    margin-top: 20px;
+    padding: 10px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: #666;
+    color: #fff;
+    font-size: 14px;
+
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.edit-task button:hover{
+    background-color: #777;
+}
+
+@media screen and (max-width: 700px) {
+    .box{
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+    }
+}
