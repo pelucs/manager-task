@@ -123,18 +123,6 @@ hr{
 .footer-container{
     width: 60%;
 }
-.aviso{
-    width: 100%;
-    padding: 20px;
-
-    border-radius: 10px;
-    background-color: #444;
-    color: #fff;
-}
-.aviso p {
-    width: 100%;
-    font-size: 14px;
-}
 .footer-container hr{
     display: none;
 }
